@@ -1,13 +1,6 @@
-describe('leapYear', function() {
-  it("is false for a year that is not divisible by 4", function() {
-    expect(leapYear(1999)).to.equal(false);
+describe('addressBook', function() {
+  it("allows a user to enter name and address and stores it for retrieval", function() {
+    expect(addressBook("Dr Who", "Tardis", "Gallifrey", "90020")).to.equal("Dr Who", "Tardis", "Gallifrey", "90020");
   });
 
-  it("is true for most years divisible by 4", function() {
-    expect(leapYear(2012)).to.equal(true);
-  });
-
-  it("is false for most years divisible by 100", function() {
-    expect(leapYear(1900)).to.equal(false);
-  });
 });
